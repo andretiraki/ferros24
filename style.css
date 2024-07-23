@@ -1,0 +1,280 @@
+/* Importa il font Roboto Mono */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto Mono';
+}
+
+
+.container{  
+    min-height: 800px;
+    margin: -8px;
+    z-index: 2;
+}
+
+.video-background{
+    position: fixed;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#background-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);    
+}
+
+.titolo-container{
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.titolo{
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.page-1{
+    background-image: url(IMG_5579.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title{
+    font-size: 48px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.subtitle-nativity{
+    font-size: 48px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.subtitle-data{
+    font-size: 48px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container-contatti {
+    padding: 45px;
+}
+
+.subtitle-container {
+    font-size: 48px; /* Riduci la dimensione del carattere */
+    margin: 5px 0; /* Riduci lo spazio tra le voci */
+    font-family: 'Roboto Mono', monospace;
+}
+
+.subtitle-container.second {
+    margin-top: 100px; /* Aumenta il margine superiore per spostare le scritte verso il basso */
+}
+
+.link-container{
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    font-size: 58px;
+}
+
+a {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a::after {
+    content: '>';
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, margin-left 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+a:hover::after {
+    transform: scale(1.1);
+    margin-left: 10px;
+}
+
+.page-2{
+    background-size: cover;
+    background-position: center;
+}
+
+.container-info {
+    padding: 35px;
+    width: 650px;
+    margin-top: -15px;
+    z-index: 1;
+    font-size: 48px; /* Riduci ulteriormente la dimensione del carattere */
+    color: white;
+    
+    font-family: 'Roboto Mono', monospace;
+}
+
+.subtitle-meet {
+    font-size: 48px; /* Riduci ulteriormente la dimensione del carattere */
+    font-style: normal; /* Rimuove il corsivo */
+    font-family: 'Roboto Mono', monospace;
+}
+
+.location-title {
+    font-size: 48px; /* Dimensione del carattere per la location */
+    font-weight: 700; /* In grassetto */
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.location-coordinates {
+    font-size: 18px; /* Dimensione del carattere per le coordinate */
+    margin-bottom: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.location-coordinates a {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.page-3{
+    height: 70px;
+    background-color: black;
+}
+.container-page-3 {
+    height: 70px;
+    background-color: black;
+}
+
+.container-contatti {
+    padding: 20px;
+    color: white; /* Colore del testo */
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.subtitle {
+    font-size: 48px; /* Dimensione del carattere per le intestazioni */
+    margin-bottom: 10px; /* Spazio inferiore per separare dalle informazioni di contatto */
+
+}
+
+.instagram-accounts {
+    margin-top: 10px; /* Spazio superiore per separare dall'intestazione "Contact us" */
+}
+
+.instagram-name {
+    font-size: 32pxpx; /* Dimensione del carattere per i nomi Instagram */
+    margin: 5px 0; /* Spazio tra i nomi */
+}
+
+.instagram-name a {
+    color: white; /* Colore del link */
+    text-decoration: none; /* Rimuove la sottolineatura dal link */
+}
+
+.instagram-name a:hover {
+    text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
+}
+
+
+.container-contatti{
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 58px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .container {
+        min-height: 800px;
+        margin: -8px;
+        z-index: 2;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    
+
+    .subtitle-vol {
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .subtitle-nativity {
+        font-size: 32px;
+        color: white;
+        font-weight: 500;
+        margin-top: -36px;
+    }
+
+    .subtitle-data {
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .subtitle-meet {
+        font-size: 16px; /* Riduci la dimensione del carattere */
+        font-style: normal; /* Rimuove il corsivo */
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .subtitle {
+        font-size: 24px; /* Riduci la dimensione del carattere per uniformità */
+        color: white;
+        font-weight: 500;
+    }
+
+    .link-container {
+        font-size: 32px;
+        white-space: nowrap;
+        position: unset;
+    }
+
+    .instagram-accounts {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .page-3 {
+        height: 70px;
+        background-color: black;
+    }
+
+    .container-info {
+        width: 320px;
+    }
+
+    .container-contatti {
+        padding: 35px;
+    }
+}

@@ -212,7 +212,7 @@ a:hover::after {
 
     .container {
         min-height: 800px;
-        margin: -8px;
+        margin: -16px;
         z-index: 2;
         display: flex;
         gap: 50px;
@@ -275,6 +275,6 @@ a:hover::after {
     }
 
     .container-contatti {
-        padding: 35px;
+        padding: 55px;
     }
 }
